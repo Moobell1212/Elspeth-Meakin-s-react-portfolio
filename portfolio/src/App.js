@@ -7,6 +7,7 @@ function App() {
     <Router>
       <div>
       <Navibar />
+      <Route />
       </div>
     </Router>
   );
