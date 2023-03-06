@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import "./style.css";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -13,8 +14,8 @@ function Navibar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="/">Homepage</NavLink>
-            <NavLink to="/projects">My projects</NavLink>
+            <NavLink to="/" className="linkname">Homepage</NavLink>
+            <NavLink to="/projects" className="linkname">My projects</NavLink>
           </Nav>
           <Nav>
           <NavLink to="/contact">Contact me</NavLink>
