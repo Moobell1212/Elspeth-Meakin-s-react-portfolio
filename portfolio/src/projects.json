@@ -5,7 +5,8 @@
         "image": "",
         "gif": "",
         "site": "",
-        "github": "https://github.com/Moobell1212/Create-your-team-website"
+        "github": "https://github.com/Moobell1212/Create-your-team-website",
+        "info": "My team building website"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "image": "",
         "gif": "",
         "site": "",
-        "github": "https://github.com/Moobell1212/Moobell-s-README-generator"
+        "github": "https://github.com/Moobell1212/Moobell-s-README-generator",
+        "info": "My README generator"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "image": "",
         "gif": "",
         "site": "https://moobell1212.github.io/5-day-weather-forecast/",
-        "github": "https://github.com/Moobell1212/5-day-weather-forecast"
+        "github": "https://github.com/Moobell1212/5-day-weather-forecast",
+        "info": "5 day weather forecast website"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "image": "",
         "gif": "",
         "site": "https://moobell1212.github.io/Busy-bee-work-day-scheduler/",
-        "github": "https://github.com/Moobell1212/Busy-bee-work-day-scheduler"
+        "github": "https://github.com/Moobell1212/Busy-bee-work-day-scheduler",
+        "info": "My day scheduler"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "image": "",
         "gif": "",
         "site": "https://github.com/Moobell1212/Javascript-quiz-",
-        "github": "https://moobell1212.github.io/Javascript-quiz-/"
+        "github": "https://moobell1212.github.io/Javascript-quiz-/",
+        "info": "My javascript quiz"
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "image": "",
         "gif": "",
         "site": "https://github.com/Moobell1212/Javascript-Password-Generator",
-        "github": "https://moobell1212.github.io/Javascript-Password-Generator/"
+        "github": "https://moobell1212.github.io/Javascript-Password-Generator/",
+        "info": "My random password generator"
     }
 ]
