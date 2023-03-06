@@ -16,7 +16,7 @@ function Projects() {
                     site={f.site}
                     github={f.github}
                     info={f.info}
-                     />)}
+                />)}
             </Container>
         </div>
     )
