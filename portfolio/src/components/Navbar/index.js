@@ -13,11 +13,11 @@ function Navibar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Homepage</Nav.Link>
-            <Link to="/projects">My projects</Link>
+            <NavLink to="/">Homepage</NavLink>
+            <NavLink to="/projects">My projects</NavLink>
           </Nav>
           <Nav>
-          <Link to="/contact">Contact me</Link>
+          <NavLink to="/contact">Contact me</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
