@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navibar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light">
+        <Navbar collapseOnSelect expand="lg" id="navbar" >
       <Container>
         <Link className="navbar-brand" to="/">Elspeth Meakin's Portfolio</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

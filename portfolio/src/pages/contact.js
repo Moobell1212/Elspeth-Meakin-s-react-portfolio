@@ -5,7 +5,7 @@ import CV from "../downloads/Untitled.pdf"
 
 function Contact(){
     return (
-        <div>
+        <div style={{ minHeight: "calc(100vh - 170px)" }}>
         <Container>
         <h1>Contact me!</h1>
         <h5>Email: <a href = "mailto: myemail@hotmail.co.uk">myemail@hotmail.co.uk</a></h5>

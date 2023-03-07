@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 function Homepage(){
     return (
-        <div class ="info">
+        <div class ="info" style={{ minHeight: "calc(100vh - 170px)" }}>
         <Container>
         <h1>This is my Name: Elspeth</h1>
         <img src={Avatar} alt="profile picture" style={{ width: 400 }}/>
