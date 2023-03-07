@@ -1,8 +1,8 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import Avatar from "../images/1096_generated.jpg";
-import CV from "../downloads/Untitled.pdf"
-import Contactform from '../components/Form';
+import myCV from "../images/myCV.png";
+import CV from "../downloads/Elspeth_Meakin_CV.pdf"
+import Contactform from '../components/Form'; 
 
 function Contact(){
     return (
@@ -13,9 +13,9 @@ function Contact(){
         <h5>GitHub: <a href="https://github.com/Moobell1212" target="_blank">Moobell1212</a></h5>
         <h5>LinkedIn: <a href="https://www.linkedin.com/in/elspeth-meakin-7289b3126/" target="_blank">Elspeth Meakin</a></h5>
         <h2 style={{ marginTop: "20px" }}>Contact me via the form below:</h2>
-        <Contactform/>
+        <Contactform />
         <h5>My CV:</h5>
-        <a href={CV} download><img src={Avatar} alt="Picture CV" width="500px"/></a>
+        <a href={CV} download><img src={myCV} alt="Picture CV" width="100%" /></a>
         </Container>
         </div>
     );
