@@ -12,7 +12,7 @@
         "id": 2,
         "name": "README generator",
         "image": "",
-        "gif": "",
+        "gif": "./images/readmedemo.mp4",
         "site": "",
         "github": "https://github.com/Moobell1212/Moobell-s-README-generator",
         "info": "My README generator"
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "5 day weather forecast website",
-        "image": "",
+        "image": "./weatherforecast.png",
         "gif": "",
         "site": "https://moobell1212.github.io/5-day-weather-forecast/",
         "github": "https://github.com/Moobell1212/5-day-weather-forecast",
