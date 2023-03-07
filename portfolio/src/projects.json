@@ -2,38 +2,38 @@
     {
         "id": 1,
         "name": "Team building website",
-        "image": "",
+        "image": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/teambuilder.png?raw=true",
         "gif": "",
         "site": "",
         "github": "https://github.com/Moobell1212/Create-your-team-website",
-        "info": "My team building website"
+        "info": "A company team building project using node.js, built utilising test driven development, using npm packages including jest, inquirer, and an email validator. "
     },
     {
         "id": 2,
         "name": "README generator",
         "image": "",
-        "gif": "./images/readmedemo.mp4",
+        "gif": "https://user-images.githubusercontent.com/117773958/220438358-58773dbb-16e9-4b76-a83f-d83d1dcfa5f2.mp4",
         "site": "",
         "github": "https://github.com/Moobell1212/Moobell-s-README-generator",
-        "info": "My README generator"
+        "info": "A README generator which uses Node.js and the inquirer npm pachage to generate a README file based on user inputs with input validators."
     },
     {
         "id": 3,
         "name": "5 day weather forecast website",
-        "image": "./weatherforecast.png",
+        "image": "https://github.com/Moobell1212/5-day-weather-forecast/blob/main/images/multiplesearches.png?raw=true",
         "gif": "",
         "site": "https://moobell1212.github.io/5-day-weather-forecast/",
         "github": "https://github.com/Moobell1212/5-day-weather-forecast",
-        "info": "5 day weather forecast website"
+        "info": "A website which provides the current weather and a 5 day forecast using the API from Open Weather Map (https://openweathermap.org/). This site also shows past user searches as buttons on the page."
     },
     {
         "id": 4,
         "name": "Day scheduler",
-        "image": "",
+        "image": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/dayscheduler.png?raw=true",
         "gif": "",
-        "site": "https://moobell1212.github.io/Busy-bee-work-day-scheduler/",
+        "site": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/dayscheduler.png?raw=true",
         "github": "https://github.com/Moobell1212/Busy-bee-work-day-scheduler",
-        "info": "My day scheduler"
+        "info": "A work day planner where user can type their to-do's into each hour section and save it to local storage for rendering onto the page when refreshed."
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "gif": "",
         "site": "https://github.com/Moobell1212/Javascript-quiz-",
         "github": "https://moobell1212.github.io/Javascript-quiz-/",
-        "info": "My javascript quiz"
+        "info": "A quiz about Javascript using Javascript."
     },
     {
         "id": 6,
