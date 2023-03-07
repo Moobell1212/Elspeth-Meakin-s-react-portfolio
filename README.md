@@ -49,7 +49,6 @@ This website will contai:
 <img src= "./Images/contact.png">
 <br></br>
 <img src= "./Images/contactzoomout.png">
-<br></br>
 
 ## Installation
 
