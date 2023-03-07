@@ -8,9 +8,14 @@ function ProjectCard(props) {
                 <div class="card-body w-40">
                     <h5 class="card-title">{props.name}</h5>
                     <p class="card-text">{props.info}</p>
-                    <a href={props.site} rel="noreferrer" target="_blank" class="btn btn-primary">Website</a>
-                    <a href={props.github} rel="noreferrer" target="_blank" class="btn btn-primary">Github</a>
-                </div>
+                    {!props.site ? (
+                    <a href={props.github} rel="noreferrer" target="_blank" className="btn btn-primary">Github</a>
+                ) : (
+                    <div><a href={props.github} rel="noreferrer" target="_blank" className="btn btn-primary">Github</a>
+                        <a href={props.site} rel="noreferrer" target="_blank" className="btn btn-primary">Website</a>
+                    </div>)
+                }
+            </div>
         </div>
     );
 }
