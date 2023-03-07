@@ -31,26 +31,26 @@
         "name": "Day scheduler",
         "image": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/dayscheduler.png?raw=true",
         "gif": "",
-        "site": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/dayscheduler.png?raw=true",
+        "site": "https://moobell1212.github.io/Busy-bee-work-day-scheduler/",
         "github": "https://github.com/Moobell1212/Busy-bee-work-day-scheduler",
         "info": "A work day planner where user can type their to-do's into each hour section and save it to local storage for rendering onto the page when refreshed."
     },
     {
         "id": 5,
         "name": "Javascript quiz",
-        "image": "",
+        "image": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/javascriptquiz.png?raw=true",
         "gif": "",
-        "site": "https://github.com/Moobell1212/Javascript-quiz-",
-        "github": "https://moobell1212.github.io/Javascript-quiz-/",
+        "site": "https://moobell1212.github.io/Javascript-quiz-/",
+        "github": "https://github.com/Moobell1212/Javascript-quiz-",
         "info": "A quiz about Javascript using Javascript."
     },
     {
         "id": 6,
         "name": "Random password generator",
-        "image": "",
+        "image": "https://github.com/Moobell1212/Elspeth-Meakin-s-react-portfolio/blob/main/portfolio/src/images/passwordgenerator.png?raw=true",
         "gif": "",
-        "site": "https://github.com/Moobell1212/Javascript-Password-Generator",
-        "github": "https://moobell1212.github.io/Javascript-Password-Generator/",
-        "info": "My random password generator"
+        "site": "https://moobell1212.github.io/Javascript-Password-Generator/",
+        "github": "https://github.com/Moobell1212/Javascript-Password-Generator",
+        "info": "A Javascript run Password generator. The user can choose: the length of password and the use of different Character types (lowercase characters, uppercase characters, numeric characters, special characters"
     }
 ]
