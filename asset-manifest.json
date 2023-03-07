@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Elspeth-Meakin-s-react-portfolio/static/css/main.4b71a83e.css",
+    "main.js": "/Elspeth-Meakin-s-react-portfolio/static/js/main.f6dafb51.js",
+    "static/media/1096_generated.jpg": "/Elspeth-Meakin-s-react-portfolio/static/media/1096_generated.7df49f979703f8cddad4.jpg",
+    "static/media/Elspeth_Meakin_CV.pdf": "/Elspeth-Meakin-s-react-portfolio/static/media/Elspeth_Meakin_CV.ea04426dc2f6585d80de.pdf",
+    "static/media/myCV.png": "/Elspeth-Meakin-s-react-portfolio/static/media/myCV.07d826fd81b8800ea061.png",
+    "index.html": "/Elspeth-Meakin-s-react-portfolio/index.html",
+    "main.4b71a83e.css.map": "/Elspeth-Meakin-s-react-portfolio/static/css/main.4b71a83e.css.map",
+    "main.f6dafb51.js.map": "/Elspeth-Meakin-s-react-portfolio/static/js/main.f6dafb51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b71a83e.css",
+    "static/js/main.f6dafb51.js"
+  ]
+}
