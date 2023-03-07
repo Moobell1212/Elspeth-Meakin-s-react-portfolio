@@ -4,12 +4,12 @@ import Container from 'react-bootstrap/Container';
 
 function Homepage(){
     return (
-        <div class ="info" style={{ minHeight: "calc(100vh - 170px)" }}>
+        <div class ="info" style={{ minHeight: "calc(100vh - 185px)" }}>
         <Container>
-        <h1>This is my Name: Elspeth</h1>
+        <h1>Hello! Welcome to my portfolio website!</h1>
         <img src={Avatar} alt="profile picture" style={{ width: 400 }}/>
-        <h1>My brand Statement</h1>
-        <h1>Indication that this is my portfolio site</h1>
+        <h2>Former science content producer turned trainee front end developer extraordinaire. Currently taking part in a front end coding bootcamp whilst building my portfolio.</h2>
+        <h3>If you have any questions about my past or current projects please contact me using the information on my contact page.</h3>
         </Container>
         </div>
     );

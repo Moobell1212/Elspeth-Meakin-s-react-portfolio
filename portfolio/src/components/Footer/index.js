@@ -4,25 +4,15 @@ import "./style.css";
 function Footer() {
     return (
         <div class="footer">
-            <div className="container-fluid text-center text-md-left">
-                <div className="row">
-                    <div className="col-md-6">
-                        <p>Here you can use rows and columns to organize your footer content.</p>
-                    </div>
-
-                    <div className="col-md-3">
-                        <ul className="list-unstyled">
-                            <li><a href="#!">Link 1</a></li>
-
-                        </ul>
-                    </div>
-                    <div className="col-md-3">
-
-                        <ul className="list-unstyled">
-                            <li><a href="#!">Link 1</a></li>
-
-                        </ul>
-                    </div>
+            <div className="row text-center">
+                <div className="col-md-6">
+                    <p>Elspeth Meakin's portfolio. Contact me via:</p>
+                </div>
+                <div className="col-md-3">
+                    <li className="list-unstyled"><a href="https://github.com/Moobell1212" target="_blank">my GitHub</a></li>
+                </div>
+                <div className="col-md-3">
+                    <li className="list-unstyled"><a href="https://www.linkedin.com/in/elspeth-meakin-7289b3126/" target="_blank">my LinkedIn</a></li>
                 </div>
             </div>
         </div>
