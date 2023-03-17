@@ -50,6 +50,8 @@ This website will contai:
 <br></br>
 <img src= "./Images/contactzoomout.png">
 
+Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
+
 ## Installation
 
 To install, on the terminal type:
