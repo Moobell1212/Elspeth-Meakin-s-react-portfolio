@@ -1,4 +1,17 @@
 # Elspeth Meakin's React Portfolio
+<div align="center">
+</br>
+
+[![Contributors](https://img.shields.io/github/contributors/Moobell1212/Elspeth-Meakin-s-react-portfolio?style=for-the-badge)](https://github.com/fl4viooliveira/react-portfolio/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Moobell1212/Elspeth-Meakin-s-react-portfolio?style=for-the-badge)](https://github.com/fl4viooliveira/react-portfolio/forks)
+[![Stargazers](https://img.shields.io/github/stars/Moobell1212/Elspeth-Meakin-s-react-portfolio?style=for-the-badge)](https://github.com/fl4viooliveira/FrontEnders/stargazers)
+[![Issues](https://img.shields.io/github/issues/Moobell1212/Elspeth-Meakin-s-react-portfolio?style=for-the-badge)](https://github.com/fl4viooliveira/FrontEnders/issues)
+
+</br>
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,bootstrap)](https://skillicons.dev)
+</div>
+</br>
 
 ## Description
 This is portfolio built using the React javascript library. It contains a homepage, a projects page, and a contacts page.
@@ -21,6 +34,8 @@ The contacts page contains:
 - A link to my GitHub profile
 - A link to my LinkedIn page
 - A link to a PDF version of your CV
+
+This project is still in development.
 
 ## Table of contents
 - [Usage](#usage)
