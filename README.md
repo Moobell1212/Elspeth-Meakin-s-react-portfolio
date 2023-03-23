@@ -49,15 +49,15 @@ This project is still in development.
 This website will contai:
 
 - A header and footer on every page. The header contains clickable links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account.
-<br></br>
+</br>
 <img src= "./Images/homepage.png">
-<br></br>
+</br>
 - A project page containing bootstrap cards with a selecton of past projects. This is shown in a normal and zoomed out screenshot below.
-<br></br>
+</br>
 <img src= "./Images/projects.png">
-<br></br>
+</br>
 <img src= "./Images/portfoliozoomout.png">
-<br></br>
+</br>
 
 - A contact page shown in a normal and zoomed out screenshot below.
 <br></br>
