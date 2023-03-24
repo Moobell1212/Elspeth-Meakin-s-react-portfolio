@@ -1,8 +1,10 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import ProjectCard from '../ProjectCard';
+import RepoAPI from '../../utils/repoAPI.js'
 
-export default function GitHubProjects() {
+export default function GitHubProjects(props) {
+    console.log(props)
     return (
         <Container>
             <h1 style={{ marginBottom: "20px" }}>Here are my other repositories from Github:</h1>
@@ -17,6 +19,7 @@ export default function GitHubProjects() {
                     info={f.info}
                 />)}
             </div> */}
+            
         </Container>
     )
 }
