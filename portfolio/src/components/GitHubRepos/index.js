@@ -17,8 +17,8 @@ export default function GitHubProjects() {
                 {repos.map(f => <RepoProjectCard key={f.id}
                     id={f.id}
                     name={f.name}
-                    site={f.site}
-                    github={f.github}
+                    site={f.homepage}
+                    github={f.svn_url}
                     info={f.info}
                 />)}
             </div>
