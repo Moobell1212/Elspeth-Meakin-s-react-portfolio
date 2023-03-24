@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
             {!props.gif ? (
                 <img src={props.image} class="card-img-top" alt={props.name} />
             ) : (
-                <iframe src={props.gif} class="card-img-top" alt={props.name} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src={props.gif} class="card-img-top" alt={props.name} title="project-video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             )
             }
             <div class="card-body w-40">
