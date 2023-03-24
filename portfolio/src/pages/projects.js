@@ -1,25 +1,14 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import ProjectCard from '../components/ProjectCard';
-import HighlightedProjects from '../projects.json'
+import HighlightedProjects from '../components/HighlightedProjects'
+import GitHubProjects from "../components/GitHubRepos";
 
 export default function Projects() {
     return (
         <div>
             <Container>
-                {/* <h1>Here are my current projects:</h1> */}
-                <h1 style={{ marginBottom: "20px" }}>Here are my past projects:</h1>
-                <div class="row justify-content-around">
-                {HighlightedProjects.map(f => <ProjectCard key={f.id}
-                    id={f.id}
-                    name={f.name}
-                    image={f.image}
-                    gif={f.gif}
-                    site={f.site}
-                    github={f.github}
-                    info={f.info}
-                />)}
-                </div>
+                <HighlightedProjects />
+                <GitHubProjects />
             </Container>
         </div>
     )
