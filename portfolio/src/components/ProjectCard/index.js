@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function ProjectCard(props) {
+export default function ProjectCard(props) {
     return (
         <div class="card border-dark text-center">
             {!props.gif ? (
@@ -24,5 +24,3 @@ function ProjectCard(props) {
         </div>
     );
 }
-
-export default ProjectCard;

@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import "./style.css";
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="footer">
             <Container>
@@ -26,5 +26,3 @@ function Footer() {
         </div>
     )
 }
-
-export default Footer;

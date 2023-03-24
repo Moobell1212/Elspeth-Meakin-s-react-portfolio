@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import ProjectCard from '../components/ProjectCard';
 import ProjectList from '../projects.json'
 
-function Projects() {
+export default function Projects() {
     return (
         <div>
             <Container>
@@ -24,5 +24,3 @@ function Projects() {
         </div>
     )
 }
-
-export default Projects;

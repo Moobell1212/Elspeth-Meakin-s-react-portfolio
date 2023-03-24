@@ -4,7 +4,7 @@ import myCV from "../images/myCV.png";
 import CV from "../downloads/Elspeth_Meakin_CV.pdf"
 import Contactform from '../components/Form'; 
 
-function Contact(){
+export default function Contact(){
     return (
         <div style={{ minHeight: "calc(100vh - 185px)" }}>
         <Container>
@@ -20,5 +20,3 @@ function Contact(){
         </div>
     );
 }
-
-export default Contact;

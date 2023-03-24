@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "./style.css";
 
-function Contactform() {
+export default function Contactform() {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -26,5 +26,3 @@ function Contactform() {
     </Form>
   );
 }
-
-export default Contactform;

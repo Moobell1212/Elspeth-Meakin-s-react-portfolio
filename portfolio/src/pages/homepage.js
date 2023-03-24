@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "../images/1096_generated.jpg";
 import Container from 'react-bootstrap/Container';
 
-function Homepage(){
+export default function Homepage(){
     return (
         <div className ="info" style={{ minHeight: "calc(100vh - 185px)" }}>
         <Container>
@@ -14,5 +14,3 @@ function Homepage(){
         </div>
     );
 }
-
-export default Homepage;

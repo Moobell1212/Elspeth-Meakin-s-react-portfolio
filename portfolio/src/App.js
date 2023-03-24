@@ -7,7 +7,7 @@ import Homepage from './pages/homepage';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div>
@@ -22,5 +22,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
