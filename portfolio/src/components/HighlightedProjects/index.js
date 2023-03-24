@@ -1,6 +1,6 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import ProjectCard from '../ProjectCard';
+import HighlightedProjectCard from '../HighProjectCard';
 import Projects from '../../projects.json'
 
 export default function HighlightedProjects() {
@@ -9,7 +9,7 @@ export default function HighlightedProjects() {
             {/* <h1>Here are my current projects:</h1> */}
             <h1 style={{ marginBottom: "20px" }}>Here are my pinned repositories from GitHub:</h1>
             <div class="row justify-content-around">
-                {Projects.map(f => <ProjectCard key={f.id}
+                {Projects.map(f => <HighlightedProjectCard key={f.id}
                     id={f.id}
                     name={f.name}
                     image={f.image}

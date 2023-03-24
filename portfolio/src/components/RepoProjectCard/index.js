@@ -1,15 +1,8 @@
 import React from "react";
-import "./style.css";
 
-export default function ProjectCard(props) {
+export default function HighlightedProjectCard(props) {
     return (
         <div class="card border-dark text-center">
-            {!props.gif ? (
-                <img src={props.image} class="card-img-top" alt={props.name} />
-            ) : (
-                <iframe src={props.gif} class="card-img-top" alt={props.name} title="project-video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            )
-            }
             <div class="card-body w-40">
                 <h5 class="card-title">{props.name}</h5>
                 <p class="card-text">{props.info}</p>
