@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer() {
     return (
-        <div class="footer">
+        <div className="footer">
             <div className="row text-center">
                 <div className="col-md-6">
                     <p>Elspeth Meakin's portfolio. Contact me via:</p>
