@@ -14,11 +14,11 @@ export default function Navibar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="/" className="link">Homepage</NavLink>
-            <NavLink to="/projects" className="link">My projects</NavLink>
+            <NavLink to="/" className="left link">Homepage</NavLink>
+            <NavLink to="/projects" className="left link">My projects</NavLink>
           </Nav>
           <Nav>
-          <NavLink to="/contact" >Contact me</NavLink>
+          <NavLink to="/contact" className="link">Contact me</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

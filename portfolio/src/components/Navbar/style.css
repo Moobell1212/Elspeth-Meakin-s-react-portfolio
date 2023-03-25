@@ -1,13 +1,32 @@
 .navbar-brand {
-    padding-right:2rem
+    padding-right: 2rem;
+    font-weight: bold !important;
+}
+
+.me-auto {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    margin-right: 3rem
 }
 
 .link {
-    padding-right:3rem
+    max-width: 150px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: radial-gradient(#8B78E6, #5C5EDD);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #navbar {
-    background-color: rgb(0,255, 247);
+    background-color: rgb(0, 255, 247);
     margin-bottom: 20px;
     min-height: 70px;
 }
