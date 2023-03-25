@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HighlightedProjectCard(props) {
+export default function RepoProjectCard(props) {
     return (
         <div class="card border-dark text-center">
             <div class="card-body w-40">

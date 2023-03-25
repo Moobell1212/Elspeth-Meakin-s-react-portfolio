@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import HighlightedProjects from '../components/HighlightedProjects'
 import GitHubProjects from "../components/GitHubRepos";
 
-
 export default function Projects() {
     return (
         <div>

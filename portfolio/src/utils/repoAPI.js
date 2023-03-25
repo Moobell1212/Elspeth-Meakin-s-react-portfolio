@@ -1,11 +1,10 @@
 import axios from "axios";
 
-export default function Repositories() {
+const repoApiUrl = "https://api.github.com/users/Moobell1212/repos";
 
-    const repoApiUrl = "https://api.github.com/users/Moobell1212/repos";
+export default function Repositories() {
 
     return (
         axios.get(repoApiUrl)
     )
-
 }

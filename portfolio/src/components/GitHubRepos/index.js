@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import RepoProjectCard from '../RepoProjectCard';
-import { useState } from "react";
 import RepoAPI from '../../utils/repoAPI.js'
 
 export default function GitHubProjects() {
 
     const [repos, setRepos] = useState([]);
 
-    RepoAPI().then((response) => setRepos(response.data))
+    useEffect(() => { RepoAPI().then((response) => {setRepos(response.data)})
+}, [])
 
     return (
         <Container>
@@ -17,12 +17,13 @@ export default function GitHubProjects() {
                 {repos.map(f => <RepoProjectCard key={f.id}
                     id={f.id}
                     name={f.name}
+                    info={f.description}
                     site={f.homepage}
                     github={f.svn_url}
-                    info={f.info}
                 />)}
             </div>
-            
+
         </Container>
     )
+
 }

@@ -14,9 +14,9 @@ export default function HighlightedProjects() {
                     name={f.name}
                     image={f.image}
                     gif={f.gif}
+                    info={f.info}
                     site={f.site}
                     github={f.github}
-                    info={f.info}
                 />)}
             </div>
         </Container>
