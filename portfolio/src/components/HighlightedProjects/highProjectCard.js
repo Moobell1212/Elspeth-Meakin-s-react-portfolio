@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./highProjectCardStyle.css";
 
 export default function HighlightedProjectCard(props) {
     return (

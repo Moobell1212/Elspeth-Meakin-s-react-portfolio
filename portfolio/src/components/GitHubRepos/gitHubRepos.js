@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
-import RepoProjectCard from '../RepoProjectCard';
+import RepoProjectCard from './repoProjectCard.js';
 import RepoAPI from '../../utils/repoAPI.js'
 
 export default function GitHubProjects() {
