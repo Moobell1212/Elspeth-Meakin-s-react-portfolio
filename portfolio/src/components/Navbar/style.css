@@ -1,5 +1,9 @@
-.linkname{
-    padding: 10px;
+.navbar-brand {
+    padding-right:2rem
+}
+
+.link {
+    padding-right:3rem
 }
 
 #navbar {
