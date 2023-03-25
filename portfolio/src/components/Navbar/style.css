@@ -5,5 +5,5 @@
 #navbar {
     background-color: rgb(0,255, 247);
     margin-bottom: 20px;
-    height: 70px;
+    min-height: 70px;
 }
