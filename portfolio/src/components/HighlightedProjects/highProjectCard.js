@@ -1,26 +1,32 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import "./highProjectCardStyle.css";
 
 export default function HighlightedProjectCard(props) {
     return (
-        <div class="card border-dark text-center">
+        <Card className="border-dark text-center">
             {!props.gif ? (
-                <img src={props.image} class="card-img-top" alt={props.name} />
+                <Card.Img variant="top" src={props.image} className="card-img-top" alt={props.name} />
             ) : (
-                <iframe src={props.gif} class="card-img-top" alt={props.name} title="project-video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src={props.gif} className="card-img-top" alt={props.name} title="project-video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             )
             }
-            <div class="card-body w-40">
-                <h5 class="card-title">{props.name}</h5>
-                <p class="card-text">{props.info}</p>
+            <Card.Body>
+                <Card.Title>{props.name}</Card.Title>
+                <Card.Text>
+                    {props.info}
+                </Card.Text>
                 {!props.site ? (
-                    <a href={props.github} rel="noreferrer" target="_blank" className="btn btn-primary">Github</a>
+                    <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
                 ) : (
-                    <div><a href={props.github} rel="noreferrer" target="_blank" className="btn btn-primary">Github</a>
-                        <a href={props.site} rel="noreferrer" target="_blank" className="btn btn-primary">Website</a>
-                    </div>)
+                    <div>
+                        <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
+                        <Button variant="primary" href={props.site} rel="noreferrer" target="_blank">Website</Button>
+                    </div>
+                )
                 }
-            </div>
-        </div>
+            </Card.Body>
+        </Card>
     );
 }

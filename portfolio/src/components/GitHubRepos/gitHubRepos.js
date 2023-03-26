@@ -12,7 +12,7 @@ export default function GitHubProjects() {
 
     return (
         <Container>
-            <h1 style={{ marginBottom: "20px" }}>Here are my other repositories from Github:</h1>
+            <h2 style={{ marginBottom: "20px" }}>Here are my other repositories from Github:</h2>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
                     id={f.id}

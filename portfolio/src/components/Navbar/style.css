@@ -13,14 +13,16 @@
 }
 
 .link {
-    max-width: 150px;
+    max-width: 118px;
     padding: 10px 20px;
     border-radius: 50px;
     background: radial-gradient(rgb(0, 255, 247), rgb(0, 238, 255));
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     margin-top: 5px;
+    align-font: center;
     color: black;
     margin-bottom: 5px;
     transition: transform 0.2s ease-in-out;
