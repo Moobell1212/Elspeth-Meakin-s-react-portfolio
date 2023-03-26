@@ -4,3 +4,8 @@
     padding-bottom: 15px;;
     margin-top: 20px;
 }
+
+.name {
+    display: flex;
+    align-items: center;
+}
