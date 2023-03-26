@@ -2,23 +2,32 @@ import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Carousel from "../components/Carousel";
 import GitHubAPI from "../utils/gitHubInfoAPI.js";
+import AvatarBanner from "../images/polygonal19.jpg";
 
-export default function Homepage(){
+export default function Homepage() {
 
     const [profilePic, setProfilePic] = useState([]);
 
-    useEffect(() => { GitHubAPI().then((response) => {setProfilePic(response.data.avatar_url)})
-}, [])
+    useEffect(() => {
+        GitHubAPI().then((response) => { setProfilePic(response.data.avatar_url) })
+    }, [])
 
     return (
-        <div className ="info" style={{ minHeight: "calc(100vh - 185px)" }}>
-        <Container>
-        <h1 style={{ marginBottom: 50 }}>Hello! Welcome to my portfolio website!</h1>
-        <img src={profilePic} alt="Elspeth Meakin" style={{ marginBottom: 50, width: 200, boxShadow: "0 3px 6px #999, 0 3px 6px #999", borderRadius: "50%", }} />
-        <h2 style={{ marginBottom: 50 }}>Former science content producer turned trainee front end developer extraordinaire. Currently taking part in a front end coding bootcamp whilst building my portfolio.</h2>
-        <h3 style={{ marginBottom: 50 }}>If you have any questions about my past or current projects please contact me using the information on my contact page.</h3>
-        <Carousel />
-        </Container>
+        <div className="info" style={{ minHeight: "calc(100vh - 185px)" }}>
+            <div className="avatarbanner" style={{ backgroundImage: `url(${AvatarBanner})`, backgroundSize: "100%", padding: "80px 0px", position: "relative" }}>
+                <Container>
+                    <div id="avatarbannercontent" style={{ display: "flex" }}>
+                        <h1 style={{ textAlign: "center", margin: "auto", padding: "0 10%", minFontSize: 70 }}>Hello! Welcome to my portfolio website!</h1>
+                        <img src={profilePic} className="img-responsive" alt="Elspeth Meakin" style={{ margin: "auto", width: "20%", boxShadow: "0 3px 6px #000, 0 3px 6px #000", borderRadius: "50%", alignContent: "center" }} />
+                    </div>
+                    <div class="bannercaption" style={{ fontSize: 8, position: "absolute", bottom: 10, left: 10 }}><a href="https://www.vecteezy.com/free-vector/banner-background" target="blank" >Banner Background Vectors by Vecteezy</a></div>
+                </Container>
+            </div>
+            <Container>
+                <h2 style={{ marginTop: 50 }}>Former science content producer turned trainee front end developer extraordinaire. Currently taking part in a front end coding bootcamp whilst building my portfolio.</h2>
+                <h3 style={{ marginTop: 50 }}>If you have any questions about my past or current projects please contact me using the information on my contact page.</h3>
+                <Carousel />
+            </Container>
         </div>
     );
 }

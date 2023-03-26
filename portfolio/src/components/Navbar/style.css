@@ -1,3 +1,7 @@
+#navbar {
+    background-color: rgb(0, 255, 247);
+    min-height: 70px;
+}
 .navbar-brand {
     padding-right: 2rem;
     font-weight: bold !important;
@@ -31,9 +35,3 @@
 .link:hover {
     transform: scale(1.05);
   }
-
-#navbar {
-    background-color: rgb(0, 255, 247);
-    margin-bottom: 20px;
-    min-height: 70px;
-}
