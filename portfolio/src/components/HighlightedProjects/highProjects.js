@@ -1,7 +1,7 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import HighlightedProjectCard from './highProjectCard.js';
-import Projects from '../../projects.json'
+import Projects from '../../utils/projects.json';
 
 export default function HighlightedProjects() {
     return (

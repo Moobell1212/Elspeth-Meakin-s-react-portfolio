@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import RepoProjectCard from './repoProjectCard.js';
-import RepoAPI from '../../utils/repoAPI.js'
+import RepoAPI from '../../utils/repoAPI.js';
+import HighProjects from '../../utils/projects.json'
 
 export default function GitHubProjects() {
 
@@ -9,6 +10,9 @@ export default function GitHubProjects() {
 
     useEffect(() => { RepoAPI().then((response) => {setRepos(response.data)})
 }, [])
+
+    console.log(repos)
+    console.log(HighProjects)
 
     return (
         <Container>
@@ -25,5 +29,4 @@ export default function GitHubProjects() {
 
         </Container>
     )
-
 }
