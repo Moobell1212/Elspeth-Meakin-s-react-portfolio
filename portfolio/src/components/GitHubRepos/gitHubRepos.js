@@ -8,25 +8,20 @@ export default function GitHubProjects() {
 
     const [repos, setRepos] = useState([]);
 
-    useEffect(() => { RepoAPI().then((response) => {setRepos(response.data)})
-}, [])
+    useEffect(() => {
+        RepoAPI().then((response) => { setRepos(response.data) })
+    }, [])
 
-    console.log(repos)
-    // console.log(HighProjects)
+    console.log(HighProjects)
 
-    let highProjectsTitles = Object.entries(JSON);
+    let highProjectTitles = [];
     HighProjects.forEach(function (obj) {
-        highProjectsTitles.push(obj.name.split(" ").join("-"))
+        highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    console.log(highProjectsTitles)
+    console.log(highProjectTitles)
 
-    // const filteredRepos = repos.filter((obj) => {
-    //     return HighProjects.some((title) => {
-    //         return title.
-    //     }
-    //     )
-    // })
+    
 
     return (
         <Container>
