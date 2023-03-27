@@ -11,12 +11,18 @@ export default function RepoProjectCard(props) {
                 <Card.Text>
                     {props.info}
                 </Card.Text>
+                <Card.Text>
+                    Created on: {props.created}
+                </Card.Text>
+                <Card.Text>
+                    Last updated: {props.updated}
+                </Card.Text>
                 {!props.site ? (
                     <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
                 ) : (
                     <div>
-                    <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
-                    <Button variant="primary" href={props.site} rel="noreferrer" target="_blank">Website</Button>
+                        <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
+                        <Button variant="primary" href={props.site} rel="noreferrer" target="_blank">Website</Button>
                     </div>
                 )
                 }

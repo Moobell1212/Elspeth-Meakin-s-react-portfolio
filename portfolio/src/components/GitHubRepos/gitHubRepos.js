@@ -12,16 +12,14 @@ export default function GitHubProjects() {
         RepoAPI().then((response) => { setRepos(response.data) })
     }, [])
 
-    console.log(HighProjects)
+    // console.log(HighProjects)
 
     let highProjectTitles = [];
     HighProjects.forEach(function (obj) {
         highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    console.log(highProjectTitles)
-
-    
+    // console.log(highProjectTitles)
 
     return (
         <Container>
@@ -33,9 +31,10 @@ export default function GitHubProjects() {
                     info={f.description}
                     site={f.homepage}
                     github={f.svn_url}
+                    created={f.created_at.slice(0, 10)}
+                    updated={f.updated_at.slice(0, 10)}
                 />)}
             </div>
-
         </Container>
     )
 }
