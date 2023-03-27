@@ -12,11 +12,25 @@ export default function GitHubProjects() {
 }, [])
 
     console.log(repos)
-    console.log(HighProjects)
+    // console.log(HighProjects)
+
+    let highProjectsTitles = Object.entries(JSON);
+    HighProjects.forEach(function (obj) {
+        highProjectsTitles.push(obj.name.split(" ").join("-"))
+    })
+
+    console.log(highProjectsTitles)
+
+    // const filteredRepos = repos.filter((obj) => {
+    //     return HighProjects.some((title) => {
+    //         return title.
+    //     }
+    //     )
+    // })
 
     return (
         <Container>
-            <h2 style={{ marginBottom: "20px" }}>Here are my other repositories from Github:</h2>
+            <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
                     id={f.id}

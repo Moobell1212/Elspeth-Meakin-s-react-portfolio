@@ -8,4 +8,13 @@
 .btn {
     margin-left: 10px;
     margin-right: 10px;
+    background: radial-gradient(rgb(0, 255, 247), rgb(0, 238, 255));
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    color: black !important;
+    transition: transform 0.2s ease-in-out;
+    border: white!important;
 }
+
+.btn:hover {
+    transform: scale(1.05);
+  }

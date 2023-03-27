@@ -7,7 +7,7 @@ export default function HighlightedProjects() {
     return (
         <Container>
             {/* <h1>Here are my current projects:</h1> */}
-            <h1 style={{ marginBottom: "20px" }}>Here are my pinned repositories from GitHub:</h1>
+            <h1 style={{ margin: "50px 0px" }}>Here are my pinned repositories from GitHub:</h1>
             <div class="row justify-content-around">
                 {Projects.map(f => <HighlightedProjectCard key={f.id}
                     id={f.id}
