@@ -4,6 +4,7 @@ import RepoProjectCard from './repoProjectCard.js';
 import RepoAPI from '../../utils/repoAPI.js';
 import HighProjects from '../../utils/projects.json';
 import Sorting from "./sortBy.js";
+import Button from "react-bootstrap/esm/Button.js";
 
 export default function GitHubProjects() {
 
@@ -13,20 +14,18 @@ export default function GitHubProjects() {
         RepoAPI().then((response) => { setRepos(response.data) })
     }, [])
 
-    // console.log(HighProjects)
-
     let highProjectTitles = [];
     HighProjects.forEach(function (obj) {
         highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    console.log(highProjectTitles)
+    repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
     function date(a, b) {
-        if (a.updated_at < b.updated_at) {
+        if (a.updated_at > b.updated_at) {
             return -1;
         }
-        if (a.updated_at > b.updated_at) {
+        if (a.updated_at < b.updated_at) {
             return 1;
         }
         return 0;
@@ -37,6 +36,10 @@ export default function GitHubProjects() {
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
+            <div className="sorting-buttons" style={{ marginBottom: 50}}>
+            <Button >Sort by Date Created</Button>
+            <Button >Sort by Date Created</Button>
+            </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
                     id={f.id}
