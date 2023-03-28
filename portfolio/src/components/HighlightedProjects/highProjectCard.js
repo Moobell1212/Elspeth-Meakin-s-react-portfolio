@@ -5,7 +5,7 @@ import "./highProjectCardStyle.css";
 
 export default function HighlightedProjectCard(props) {
     return (
-        <Card className="border-dark text-center">
+        <Card className="border-dark text-center highcard">
             {!props.gif ? (
                 <Card.Img variant="top" src={props.image} className="card-img-top" alt={props.name} />
             ) : (

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import RepoProjectCard from './repoProjectCard.js';
 import RepoAPI from '../../utils/repoAPI.js';
-import HighProjects from '../../utils/projects.json'
+import HighProjects from '../../utils/projects.json';
+import Sorting from "./sortBy.js";
 
 export default function GitHubProjects() {
 
@@ -19,18 +20,18 @@ export default function GitHubProjects() {
         highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    // console.log(highProjectTitles)
+    console.log(highProjectTitles)
 
-    function date( a, b ) {
-        if ( a.updated_at < b.updated_at ){
-          return -1;
+    function date(a, b) {
+        if (a.updated_at < b.updated_at) {
+            return -1;
         }
-        if ( a.updated_at > b.updated_at ){
-          return 1;
+        if (a.updated_at > b.updated_at) {
+            return 1;
         }
         return 0;
-      }
-    
+    }
+
     repos.sort(date)
 
     return (

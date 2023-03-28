@@ -7,12 +7,12 @@ export default function RepoProjectCard(props) {
     return (
         <Card className="repocard border-dark text-center">
             <Card.Body>
-                <Card.Title>{props.name}</Card.Title>
+                <Card.Title className="repo-card-title">{props.name}</Card.Title>
                 <Card.Text>
                     {props.info}
                 </Card.Text>
                 <div id="card-bottom-half">
-                    <Card.Text>
+                    <Card.Text className="repo-date">
                         Created on: {props.created}
                     </Card.Text>
                     <Card.Text>
