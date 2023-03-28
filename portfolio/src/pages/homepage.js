@@ -16,8 +16,8 @@ export default function Homepage() {
         <div className="info" style={{ minHeight: "calc(100vh - 185px)" }}>
             <div className="avatarbanner" style={{ backgroundImage: `url(${AvatarBanner})`, backgroundSize: "100%", padding: "80px 0px", position: "relative" }}>
                 <Container>
-                    <div id="avatarbannercontent" style={{ display: "flex" }}>
-                        <h1 style={{ textAlign: "center", margin: "auto", padding: "0 10%", minFontSize: 70 }}>Hello! Welcome to my portfolio website!</h1>
+                    <div id="avatarbannercontent" style={{ display: "flex", height: "calc(100vh - 240px)" }}>
+                        <h1 style={{ textAlign: "center", margin: "auto", padding: "0 10%", minFontSize: 70 }}>Welcome to my portfolio website!</h1>
                         <img src={profilePic} className="img-responsive" alt="Elspeth Meakin" style={{ margin: "auto", width: "20%", boxShadow: "0 3px 6px #000, 0 3px 6px #000", borderRadius: "50%", alignContent: "center" }} />
                     </div>
                     <div class="bannercaption" style={{ fontSize: 8, position: "absolute", bottom: 10, left: 10 }}><a href="https://www.vecteezy.com/free-vector/banner-background" target="blank" >Banner Background Vectors by Vecteezy</a></div>
