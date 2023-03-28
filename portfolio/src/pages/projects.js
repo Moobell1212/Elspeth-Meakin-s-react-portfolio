@@ -8,7 +8,7 @@ export default function Projects() {
         <div>
             <Container>
                 <HighlightedProjects />
-                <GitHubProjects />
+                <GitHubProjects  />
             </Container>
         </div>
     )

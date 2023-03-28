@@ -1,36 +1,46 @@
 #navbar {
-    background-color: rgb(80, 194, 220);
+    background-color: rgb(153, 228, 247);
     min-height: 80px;
 }
+
 .navbar-brand {
-    padding-right: 2rem;
+    padding-right: 4rem;
     font-weight: bold !important;
 }
 
-.me-auto {
-    display: flex;
-    flex-direction: row;
-}
-
 .left {
-    margin-right: 3rem
+    margin-right: 5rem
 }
 
 .link {
-    max-width: 118px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: radial-gradient(rgb(140, 221, 242), rgb(78, 191, 231));
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 5px;
+    font-size: 16px;
     color: black;
-    margin-bottom: 5px;
-    transition: transform 0.2s ease-in-out;
 }
 
 .link:hover {
-    transform: scale(1.05);
-  }
+    color: rgb(50, 176, 225);
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12, 95, 137);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: rgb(12, 95, 137);
+    height: 2.5px;
+}

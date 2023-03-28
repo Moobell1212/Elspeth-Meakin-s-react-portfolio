@@ -1,5 +1,5 @@
 .repocard {
-    width: 300px!important;
+    width: 300px !important;
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
@@ -12,9 +12,9 @@
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     color: black !important;
     transition: transform 0.2s ease-in-out;
-    border: white!important;
+    border: white !important;
 }
 
 .btn:hover {
     transform: scale(1.05);
-  }
+}
