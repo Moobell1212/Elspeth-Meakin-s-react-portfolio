@@ -31,14 +31,12 @@ export default function GitHubProjects() {
         return 0;
     }
 
-    repos.sort(date)
-
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
-            <div className="sorting-buttons" style={{ marginBottom: 50}}>
-            <Button >Sort by Date Created</Button>
-            <Button >Sort by Date Created</Button>
+            <div className="sorting-buttons" style={{ marginBottom: 50 }}>
+                <Button onClick={repos.sort(date)}>Sort by Date Created</Button>
+                <Button >Sort by Date Created</Button>
             </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
