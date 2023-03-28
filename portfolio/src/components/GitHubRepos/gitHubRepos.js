@@ -21,6 +21,18 @@ export default function GitHubProjects() {
 
     // console.log(highProjectTitles)
 
+    function date( a, b ) {
+        if ( a.updated_at < b.updated_at ){
+          return -1;
+        }
+        if ( a.updated_at > b.updated_at ){
+          return 1;
+        }
+        return 0;
+      }
+    
+    repos.sort(date)
+
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
