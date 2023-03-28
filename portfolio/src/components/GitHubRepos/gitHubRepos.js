@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import RepoProjectCard from './repoProjectCard.js';
 import RepoAPI from '../../utils/repoAPI.js';
 import HighProjects from '../../utils/projects.json';
-import Sorting from "./sortBy.js";
 import Button from "react-bootstrap/esm/Button.js";
 
 export default function GitHubProjects() {
@@ -21,22 +20,41 @@ export default function GitHubProjects() {
 
     repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
-    function date(a, b) {
-        if (a.updated_at > b.updated_at) {
-            return -1;
-        }
-        if (a.updated_at < b.updated_at) {
-            return 1;
-        }
-        return 0;
+    
+    function upDatedFilter() {
+        console.log(`Filter by updated`)
+        // const updated = (a, b) => {
+        //     if (a.updated_at > b.updated_at) {
+        //         return -1;
+        //     }
+        //     if (a.updated_at < b.updated_at) {
+        //         return 1;
+        //     }
+        //     return 0;
+        // }
+        // repos.sort(updated)
+    }
+
+    function createdFilter() {
+        console.log(`Filter by created`)
+        // const created = (a, b) => {
+        //     if (a.created_at > b.created_at) {
+        //         return -1;
+        //     }
+        //     if (a.created_at < b.created_at) {
+        //         return 1;
+        //     }
+        //     return 0;
+        // }
+        // repos.sort(created)
     }
 
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
             <div className="sorting-buttons" style={{ marginBottom: 50 }}>
-                <Button onClick={repos.sort(date)}>Sort by Date Created</Button>
-                <Button >Sort by Date Created</Button>
+                <Button onClick={upDatedFilter}>Sort by Date Created</Button>
+                <Button onClick={createdFilter}>Sort by Date Updated</Button>
             </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
