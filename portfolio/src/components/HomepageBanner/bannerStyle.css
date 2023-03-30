@@ -1,0 +1,38 @@
+#banner {
+    background-size: 100%;
+    height: calc(100vh - 80px);
+}
+
+#banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+#banner-text {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#banner-subtitle {
+    position: absolute;
+    bottom: 10px;
+}
+
+#banner-img {
+    margin: auto auto;
+    max-width: 300px;
+    box-shadow: 0px 3px 6px #000, 0px 3px 6px #000;
+    border-radius: 50%;
+    align-content: center;
+}
+
+#banner-caption {
+    font-size: 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}

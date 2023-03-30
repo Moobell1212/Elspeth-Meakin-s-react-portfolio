@@ -14,7 +14,7 @@ export default function bannerMessage() {
     };
     return (
         <div>
-            <Typer speed={200} children={message} ></Typer>
+            <p style={{ fontSize: 20, fontWeight: "bold"}}><Typer speed={200} children={message} ></Typer></p>
         </div>
     );
 };
