@@ -7,21 +7,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 export default function Navibar() {
-    return (
-        <Navbar collapseOnSelect expand="lg" id="navbar" >
+  return (
+    <Navbar collapseOnSelect expand="lg" id="navbar" >
       <Container>
         <Link className="navbar-brand" to="/">Elspeth Meakin's Portfolio</Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="/" className="left link">Homepage</NavLink>
-            <NavLink to="/projects" className="left link">My projects</NavLink>
+            <NavLink to="/" className="link">Homepage</NavLink>
           </Nav>
-          <Nav>
-          <NavLink to="/contact" className="link">Contact me</NavLink>
+          <Nav className="me-auto">
+            <NavLink to="/projects" className="link">My projects</NavLink>
           </Nav>
-        </Navbar.Collapse>
+          <Nav className="me-auto">
+            <NavLink to="/contact" className="link">Contact me</NavLink>
+          </Nav>
       </Container>
     </Navbar>
-    );
+  );
 }
