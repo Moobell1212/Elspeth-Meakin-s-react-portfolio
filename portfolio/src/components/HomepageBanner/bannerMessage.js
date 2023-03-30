@@ -14,7 +14,7 @@ export default function bannerMessage() {
     };
     return (
         <div>
-            <Typer speed={250} children={message} ></Typer>
+            <Typer speed={200} children={message} ></Typer>
         </div>
     );
 };

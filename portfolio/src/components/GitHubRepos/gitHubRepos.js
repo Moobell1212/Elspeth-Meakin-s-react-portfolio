@@ -18,43 +18,44 @@ export default function GitHubProjects() {
         highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
+    // repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
-    
-    function upDatedFilter() {
-        console.log(`Filter by updated`)
-        // const updated = (a, b) => {
-        //     if (a.updated_at > b.updated_at) {
-        //         return -1;
-        //     }
-        //     if (a.updated_at < b.updated_at) {
-        //         return 1;
-        //     }
-        //     return 0;
-        // }
-        // repos.sort(updated)
+    function updatedFilter() {
+        const updated = (a, b) => {
+            if (a.updated_at > b.updated_at) {
+                return -1;
+            }
+            if (a.updated_at < b.updated_at) {
+                return 1;
+            }
+            return 0;
+        }
+        console.log(`Filter by updated`);
+        console.log(repos);
+        repos.sort(updated)
     }
 
     function createdFilter() {
-        console.log(`Filter by created`)
-        // const created = (a, b) => {
-        //     if (a.created_at > b.created_at) {
-        //         return -1;
-        //     }
-        //     if (a.created_at < b.created_at) {
-        //         return 1;
-        //     }
-        //     return 0;
-        // }
-        // repos.sort(created)
+        const created = (a, b) => {
+            if (a.created_at > b.created_at) {
+                return -1;
+            }
+            if (a.created_at < b.created_at) {
+                return 1;
+            }
+            return 0;
+        }
+        console.log(`Filter by created`);
+        console.log(repos);
+        repos.sort(created)
     }
 
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
             <div className="sorting-buttons" style={{ marginBottom: 50 }}>
-                <Button onClick={upDatedFilter}>Sort by Date Created</Button>
-                <Button onClick={createdFilter}>Sort by Date Updated</Button>
+                <Button onClick={createdFilter}>Sort by Date Created</Button>
+                <Button onClick={updatedFilter}>Sort by Date Updated</Button>
             </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
