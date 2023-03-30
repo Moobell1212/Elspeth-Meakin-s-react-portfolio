@@ -16,10 +16,10 @@ export default function HomepageBanner() {
     return (
         <div id="banner" style={{ backgroundImage: `url(${BannerBackground})`, backgroundSize: "100%" }} >
             <Container id="banner-content">
-                    <div id="banner-text">
-                        <div style={{ display: "inline" }}>
+                    <div id="banner-text-img">
+                        <div id="banner-text">
                         <BannerMessage style={{ display: "block" }} />
-                        <div style={{ height: "100%", position: "relative" }}>
+                        <div id="banner-name-sub" style={{ height: "100%", position: "relative" }}>
                             <h1>Elspeth Meakin</h1>
                             <h2 id="banner-subtitle">Welcome to my portfolio website!</h2>
                         </div>
