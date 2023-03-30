@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Elspeth-Meakin-s-react-portfolio/static/css/main.13b42518.css",
-    "main.js": "/Elspeth-Meakin-s-react-portfolio/static/js/main.9e4a1f78.js",
+    "main.css": "/Elspeth-Meakin-s-react-portfolio/static/css/main.eebafccd.css",
+    "main.js": "/Elspeth-Meakin-s-react-portfolio/static/js/main.f483a31b.js",
     "static/media/polygonal19.jpg": "/Elspeth-Meakin-s-react-portfolio/static/media/polygonal19.4814d6333a8f09afb7c3.jpg",
     "static/media/myCV.png": "/Elspeth-Meakin-s-react-portfolio/static/media/myCV.fa62dc53da05c20b6127.png",
     "static/media/Elspeth_Meakin's_CV.pdf": "/Elspeth-Meakin-s-react-portfolio/static/media/Elspeth_Meakin's_CV.22e4a6d0d5444955a9ad.pdf",
     "index.html": "/Elspeth-Meakin-s-react-portfolio/index.html",
-    "main.13b42518.css.map": "/Elspeth-Meakin-s-react-portfolio/static/css/main.13b42518.css.map",
-    "main.9e4a1f78.js.map": "/Elspeth-Meakin-s-react-portfolio/static/js/main.9e4a1f78.js.map"
+    "main.eebafccd.css.map": "/Elspeth-Meakin-s-react-portfolio/static/css/main.eebafccd.css.map",
+    "main.f483a31b.js.map": "/Elspeth-Meakin-s-react-portfolio/static/js/main.f483a31b.js.map"
   },
   "entrypoints": [
-    "static/css/main.13b42518.css",
-    "static/js/main.9e4a1f78.js"
+    "static/css/main.eebafccd.css",
+    "static/js/main.f483a31b.js"
   ]
 }
