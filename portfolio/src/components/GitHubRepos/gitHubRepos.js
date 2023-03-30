@@ -20,6 +20,11 @@ export default function GitHubProjects() {
 
     // repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
+    // function createRepoCards() {
+    //     return (
+    //     )
+    // }
+
     function updatedFilter() {
         const updated = (a, b) => {
             if (a.updated_at > b.updated_at) {
@@ -48,6 +53,7 @@ export default function GitHubProjects() {
         console.log(`Filter by created`);
         console.log(repos);
         repos.sort(created)
+        // createRepoCards()
     }
 
     return (
@@ -59,14 +65,14 @@ export default function GitHubProjects() {
             </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
-                    id={f.id}
-                    name={f.name}
-                    info={f.description}
-                    site={f.homepage}
-                    github={f.svn_url}
-                    created={f.created_at.slice(0, 10)}
-                    updated={f.updated_at.slice(0, 10)}
-                />)}
+            id={f.id}
+            name={f.name}
+            info={f.description}
+            site={f.homepage}
+            github={f.svn_url}
+            created={f.created_at.slice(0, 10)}
+            updated={f.updated_at.slice(0, 10)}
+        />)}
             </div>
         </Container>
     )

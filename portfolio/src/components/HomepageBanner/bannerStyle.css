@@ -25,6 +25,10 @@
     position: relative;
 }
 
+#my-name {
+    font-size: 70px;
+}
+
 #banner-subtitle {
     position: absolute;
     bottom: 40px;

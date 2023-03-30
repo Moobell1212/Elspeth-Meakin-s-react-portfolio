@@ -6,7 +6,7 @@ import Contactform from '../components/Form';
 
 export default function Contact(){
     return (
-        <div style={{ minHeight: "calc(100vh - 185px)" }}>
+        <div style={{ minHeight: "calc(100vh - 185px)", margin: "50px 0px"}}>
         <Container>
         <h1>Contact page</h1>
         <h5>GitHub: <a href="https://github.com/Moobell1212" target="_blank" rel="noreferrer" >Moobell1212</a></h5>

@@ -20,7 +20,7 @@ export default function HomepageBanner() {
                         <div id="banner-text">
                         <BannerMessage style={{ display: "block" }} />
                         <div id="banner-name-sub" style={{ height: "100%", position: "relative" }}>
-                            <h1>Elspeth Meakin</h1>
+                            <h1 id="my-name">Elspeth Meakin</h1>
                             <h2 id="banner-subtitle">Welcome to my portfolio website!</h2>
                         </div>
                         </div>
