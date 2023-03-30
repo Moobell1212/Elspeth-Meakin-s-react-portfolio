@@ -14,28 +14,41 @@
 </br>
 
 ## Description
-This is portfolio built using the React javascript library. It contains a homepage, a projects page, and a contacts page.
+This is portfolio built using React, built maingly using API calls from GitHub. It contains a homepage, a projects page, and a contacts page. The navigation bar and footer is rendered to each page.
+
+***This webpage is currently being built.***
 
 The homepage contains:
-- My Name
-- My avatar
+- A banner containing:
+    - A letter by letter rendered message
+    - The profile photo from my GitHub profile (from an API call)
 - More information about me
+- A carousel with the stared repos from GitHub (from an API call)
 
 The projects page contains:
-- A selection of my past projects
-- The project title and information
-- A link to the deployed website (when applicable)
-- A link to the GitHub repository
-- A gif of screenshot of the application
+- A highlighted selection of my past projects on boostrap cards containing:
+    - The project title 
+    - Information on the project
+    - A link to the deployed website (when applicable)
+    - A link to the GitHub repository
+    - A gif or screenshot of the application
+- Bootstrap cards containing all the repositories on my GitHub using the GitHub API call containing:
+    - The project title 
+    - A short description of the project
+    - A link to the deployed website (when applicable)
+    - A link to the GitHub repository
+    - Dates that the repository was last updated, and when it was created.
 
 The contacts page contains:
 - A contact form
-- My email address
-- A link to my GitHub profile
-- A link to my LinkedIn page
-- A link to a PDF version of your CV
+- Links to my GitHub and LinkedIn
+- A linked photo to a PDF version of my CV
 
-This project is still in development.
+</br>
+
+***This webpage is currently being built.***
+
+Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
 
 ## Table of contents
 - [Usage](#usage)
@@ -44,28 +57,24 @@ This project is still in development.
 - [License](#license)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Acknowledgments](#questions)
 
 ## Usage
-This website will contai:
+- The header and footer renders to every page. The header contains animated  links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account, and links to contact me via the contact page and email.
+</br>
 
-- A header and footer on every page. The header contains clickable links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account.
-</br>
-<img src= "./Images/homepage.png">
-</br>
-- A project page containing bootstrap cards with a selecton of past projects. This is shown in a normal and zoomed out screenshot below.
-</br>
-<img src= "./Images/projects.png">
-</br>
-<img src= "./Images/portfoliozoomout.png">
+- The project page contains:
+
+    - Bootstrap cards with a selecton of past projects created using a json file. These will have buttons with hover animations for the projects GitHub page and deloyed website (if applicable). 
+    - Cards showing all the other repositories from my GitHub created using a GitHub API call. These repositories can be filtered by the date they are created and the date they were last updated via animated sort buttons.
 </br>
 
 - A contact page shown in a normal and zoomed out screenshot below.
-<br></br>
-<img src= "./Images/contact.png">
-<br></br>
-<img src= "./Images/contactzoomout.png">
+</br>
 
-Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
+***This webpage is currently being built.***
+
+Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
 
 ## Installation
 
@@ -98,3 +107,9 @@ None
 
 ## Questions
 Contact the developer with any questions at the GitHub repository: [Moobell1212](https://github.com/Moobell1212).
+
+## Acknowledgments
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+- [Skill Icons](https://skillicons.dev/)
+- [react-gh-pages](https://github.com/gitname/react-gh-pages)
