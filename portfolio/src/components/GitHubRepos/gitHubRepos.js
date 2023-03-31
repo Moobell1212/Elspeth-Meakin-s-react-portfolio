@@ -13,34 +13,28 @@ export default function GitHubProjects() {
         RepoAPI().then((response) => { setRepos(response.data) })
     }, [])
 
-    let highProjectTitles = [];
-    HighProjects.forEach(function (obj) {
-        highProjectTitles.push(obj.name.split(" ").join("-"))
-    })
+    // let highProjectTitles = [];
+    // HighProjects.forEach(function (obj) {
+    //     highProjectTitles.push(obj.name.split(" ").join("-"))
+    // })
 
     // repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
-    // function createRepoCards() {
-    //     return (
-    //     )
-    // }
-
-    function updatedFilter() {
-        const updated = (a, b) => {
-            if (a.updated_at > b.updated_at) {
+    const pushedFilter = () => {
+        const pushed = (a, b) => {
+            if (a.pushed_at > b.pushed_at) {
                 return -1;
             }
-            if (a.updated_at < b.updated_at) {
+            if (a.pushed_at < b.pushed_at) {
                 return 1;
             }
             return 0;
         }
-        console.log(`Filter by updated`);
-        console.log(repos);
-        repos.sort(updated)
+        console.log(`Filter by pushed`);
+        setRepos(repos.sort(pushed))
     }
 
-    function createdFilter() {
+    const createdFilter = () => {
         const created = (a, b) => {
             if (a.created_at > b.created_at) {
                 return -1;
@@ -51,29 +45,49 @@ export default function GitHubProjects() {
             return 0;
         }
         console.log(`Filter by created`);
-        console.log(repos);
-        repos.sort(created)
-        // createRepoCards()
+        setRepos(repos.sort(created))
+    }
+
+    const updatedFilter = () => {
+        const updated = (a, b) => {
+            if (a.updated_at > b.updated_at) {
+                return -1;
+            }
+            if (a.updated_at < b.updated_at) {
+                return 1;
+            }
+            return 0;
+        }
+        console.log(`Filter by updated`);
+        setRepos(repos.sort(updated))
+    }
+
+    console.log(repos);
+
+    const renderRepos = () => {
+        return (<div class="row justify-content-around">
+            {repos.map(f => <RepoProjectCard key={f.id}
+                id={f.id}
+                name={f.name}
+                info={f.description}
+                site={f.homepage}
+                github={f.svn_url}
+                created={f.created_at.slice(0, 10)}
+                pushed={f.pushed_at.slice(0, 10)}
+            />)}
+        </div>
+        )
     }
 
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
             <div className="sorting-buttons" style={{ marginBottom: 50 }}>
-                <Button onClick={createdFilter}>Sort by Date Created</Button>
-                <Button onClick={updatedFilter}>Sort by Date Updated</Button>
+                <Button onClick={createdFilter} style={{ margin: "10px 10px" }}>Sort by Date Created</Button>
+                <Button onClick={updatedFilter} style={{ margin: "10px 10px" }}>Sort by Date Updated</Button>
+                <Button onClick={pushedFilter} style={{ margin: "10px 10px" }}>Sort by Last Pushed</Button>
             </div>
-            <div class="row justify-content-around">
-                {repos.map(f => <RepoProjectCard key={f.id}
-            id={f.id}
-            name={f.name}
-            info={f.description}
-            site={f.homepage}
-            github={f.svn_url}
-            created={f.created_at.slice(0, 10)}
-            updated={f.updated_at.slice(0, 10)}
-        />)}
-            </div>
+            {renderRepos()}
         </Container>
     )
 }

@@ -16,7 +16,7 @@ export default function RepoProjectCard(props) {
                         Created on: {props.created}
                     </Card.Text>
                     <Card.Text>
-                        Last updated: {props.updated}
+                        Last pushed: {props.pushed}
                     </Card.Text>
                     {!props.site ? (
                         <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
