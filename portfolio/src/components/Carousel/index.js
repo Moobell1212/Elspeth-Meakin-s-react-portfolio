@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import StaredProjectCard from './staredProjectCard.js';
 import StaredAPI from '../../utils/staredAPI.js';
-import "./style.css";
 
 export default function PinnedRepoCarousel() {
 
@@ -20,8 +19,8 @@ export default function PinnedRepoCarousel() {
 
   return (
     <Carousel variant="dark" id="carousel">
-      <Carousel.Item interval={3000} className="carousel-slide">
-        <div class="row justify-content-around">
+      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+        <div class="row justify-content-around" style={{margin: 80 }}>
           {slideOne.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
             info={f.description}
@@ -30,8 +29,8 @@ export default function PinnedRepoCarousel() {
           />)}
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={3000} className="carousel-slide">
-        <div class="row justify-content-around">
+      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+        <div class="row justify-content-around" style={{margin: 80 }}>
           {slideTwo.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
             info={f.description}
@@ -40,8 +39,8 @@ export default function PinnedRepoCarousel() {
           />)}
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={3000} className="carousel-slide">
-        <div class="row justify-content-around">
+      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+        <div class="row justify-content-around" style={{margin: 80 }}>
           {slideThree.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
             info={f.description}
