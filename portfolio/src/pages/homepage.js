@@ -12,7 +12,7 @@ export default function Homepage() {
                     <h2>About me:</h2>
                     <p style={{ fontSize: 20 }}>Former science content producer turned front-end developer with a certificate from Trilogy’s skills
                         bootcamp in front-end web development (<a href="https://skillsforlife.edx.org/" target="_blank" rel="noreferrer">https://skillsforlife.edx.org/</a>),
-                        where I graduated with a A+ grade (100%) in my projects and assignments.</p>
+                        where I graduated with an A+ grade (100%) in my projects and assignments.</p>
                 </Container>
             </div>
             <div style={{ backgroundColor: "#C8F0FA", padding: "100px 0px" }}>

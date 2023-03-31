@@ -1,7 +1,7 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import myCV from "../images/myCV.png";
-import CV from "../downloads/Elspeth_Meakin's_CV.pdf";
+import CV from "../downloads/Elspeth_Meakin's_CV.pdf"; 
 
 export default function Contact() {
     return (

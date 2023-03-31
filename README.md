@@ -40,7 +40,6 @@ The projects page contains:
     - Dates that the repository was last updated, and when it was created.
 
 The contacts page contains:
-- A contact form
 - Links to my GitHub and LinkedIn
 - A linked photo to a PDF version of my CV
 
@@ -61,6 +60,16 @@ Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-re
 
 ## Usage
 - The header and footer renders to every page. The header contains animated  links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account, and links to contact me via the contact page and email.
+
+- The homepage contains:
+    - A banner with a typed message, my name, a welcome message, and the profile picture used on GitHub (generated from a GitHub API).
+    - Information about me.
+    - The list of technologies I know and use.
+    - A carousel containing the pinned repositories from my GitHub profile (generated from a GitHub API).
+
+</br>
+<img src="./Images/homepage.png">
+
 </br>
 
 - The project page contains:
@@ -69,7 +78,13 @@ Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-re
     - Cards showing all the other repositories from my GitHub created using a GitHub API call. These repositories can be filtered by the date they are created and the date they were last updated via animated sort buttons.
 </br>
 
-- A contact page shown in a normal and zoomed out screenshot below.
+- The contact page contains:
+    - Contact information (GitHub and LinkedIn).
+    - A linked picture to a PDF download of my CV.
+
+</br>
+<img src="./Images/contact.png">
+
 </br>
 
 ***This webpage is currently being built.***
