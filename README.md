@@ -113,3 +113,4 @@ Contact the developer with any questions at the GitHub repository: [Moobell1212]
 - [GitHub Pages](https://pages.github.com)
 - [Skill Icons](https://skillicons.dev/)
 - [react-gh-pages](https://github.com/gitname/react-gh-pages)
+- [gh-pinned-repos](https://github.com/egoist/gh-pinned-repos)
