@@ -5,7 +5,6 @@ import "./style.css";
 export default function Contactform() {
 
   const ContactForm = () => {
-
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
       setTimeout(() => {
@@ -21,7 +20,7 @@ export default function Contactform() {
         </>
       );
     }
-  }
+  };
 
   return (
     <Form action={FORM_ENDPOINT}

@@ -11,19 +11,19 @@ export default function GitHubProjects() {
 
     useEffect(() => {
         RepoAPI().then((response) => { setRepos(response.data) })
-    }, [])
+    }, []);
 
     let highProjectTitles = [];
     HighProjects.forEach(function (obj) {
         highProjectTitles.push(obj.name.split(" ").join("-"))
-    })
+    });
 
-    const removePortfolio = () => {
-        const removeTitle = (array) => {
-            array.filter(x => x.node_id === "R_kgDOJE8_rA")
-        }
-        setRepos(removeTitle(repos))
-    }
+    // const removePortfolio = () => {
+    //     const removeTitle = (array) => {
+    //         array.filter(x => x.node_id === "R_kgDOJE8_rA")
+    //     }
+    //     setRepos(removeTitle(repos))
+    // }
 
     // removePortfolio()
 
@@ -39,7 +39,7 @@ export default function GitHubProjects() {
         }
         console.log(`Filter by pushed`);
         setRepos(repos.sort(pushed))
-    }
+    };
 
     const createdFilter = () => {
         const created = (a, b) => {
@@ -53,7 +53,7 @@ export default function GitHubProjects() {
         }
         console.log(`Filter by created`);
         setRepos(repos.sort(created))
-    }
+    };
 
     const updatedFilter = () => {
         const updated = (a, b) => {
@@ -67,7 +67,7 @@ export default function GitHubProjects() {
         }
         console.log(`Filter by updated`);
         setRepos(repos.sort(updated))
-    }
+    };
 
     console.log(repos);
 
@@ -84,7 +84,7 @@ export default function GitHubProjects() {
             />)}
         </div>
         )
-    }
+    };
 
     return (
         <Container>

@@ -68,7 +68,7 @@
     #my-name {
         display: block;
     }
-    
+
     #banner-subtitle {
         top: 130px;
     }
@@ -80,10 +80,10 @@
 }
 
 @media only screen and (max-width: 800px) {
-    #my-name{
+    #my-name {
         font-size: 3rem;
     }
-    
+
     #banner-img {
         width: 200px;
         margin-top: 20px;
