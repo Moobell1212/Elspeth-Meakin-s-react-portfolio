@@ -18,7 +18,14 @@ export default function GitHubProjects() {
         highProjectTitles.push(obj.name.split(" ").join("-"))
     })
 
-    // repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
+    const removePortfolio = () => {
+        const removeTitle = (array) => {
+            array.filter(x => x.node_id === "R_kgDOJE8_rA")
+        }
+        setRepos(removeTitle(repos))
+    }
+
+    // removePortfolio()
 
     const pushedFilter = () => {
         const pushed = (a, b) => {

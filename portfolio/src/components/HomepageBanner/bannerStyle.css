@@ -23,6 +23,7 @@
 
 #banner-name-sub {
     position: relative;
+    display: flex;
 }
 
 #my-name {
@@ -51,10 +52,8 @@
 
 @media only screen and (max-width: 1000px) {
     #banner-text-img {
-        display: flex;
-        display: block;
         margin: auto;
-        width: 70%;
+        width: 90%;
     }
 
     #banner-text {
@@ -63,11 +62,15 @@
 
     #banner-name-sub {
         margin-top: 20px;
-        height: 180px !important;
+        height: 200px !important;
     }
 
+    #my-name {
+        display: block;
+    }
+    
     #banner-subtitle {
-        top: 80px
+        top: 130px;
     }
 
     #banner-img {
@@ -76,8 +79,13 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
+    #my-name{
+        font-size: 3rem;
+    }
+    
     #banner-img {
-        width: 200px
+        width: 200px;
+        margin-top: 20px;
     }
 }

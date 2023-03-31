@@ -19,7 +19,7 @@ export default function PinnedRepoCarousel() {
 
   return (
     <Carousel variant="dark" id="carousel">
-      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+      <Carousel.Item interval={3000} className="carousel-slide" style={{minHeight: 350 }}>
         <div class="row justify-content-around" style={{margin: 80 }}>
           {slideOne.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
@@ -29,7 +29,7 @@ export default function PinnedRepoCarousel() {
           />)}
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+      <Carousel.Item interval={3000} className="carousel-slide" style={{minHeight: 350 }}>
         <div class="row justify-content-around" style={{margin: 80 }}>
           {slideTwo.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
@@ -39,7 +39,7 @@ export default function PinnedRepoCarousel() {
           />)}
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={3000} className="carousel-slide" style={{height: 350 }}>
+      <Carousel.Item interval={3000} className="carousel-slide" style={{minHeight: 350 }}>
         <div class="row justify-content-around" style={{margin: 80 }}>
           {slideThree.map(f => <StaredProjectCard
             name={f.repo.split("-").join(" ")}
