@@ -13,10 +13,10 @@ export default function GitHubProjects() {
         RepoAPI().then((response) => { setRepos(response.data) })
     }, [])
 
-    // let highProjectTitles = [];
-    // HighProjects.forEach(function (obj) {
-    //     highProjectTitles.push(obj.name.split(" ").join("-"))
-    // })
+    let highProjectTitles = [];
+    HighProjects.forEach(function (obj) {
+        highProjectTitles.push(obj.name.split(" ").join("-"))
+    })
 
     // repos.filter(x => x.name !== "Elspeth-Meakin-s-Bootstrap-Portfolio")
 
