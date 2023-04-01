@@ -69,23 +69,6 @@ export default function GitHubProjects() {
         setRepos([...repos.sort(updated)])
     };
 
-    console.log(repos);
-
-    const renderRepos = () => {
-        return (<div class="row justify-content-around">
-            {repos.map(f => <RepoProjectCard key={f.id}
-                id={f.id}
-                name={f.name}
-                info={f.description}
-                site={f.homepage}
-                github={f.svn_url}
-                created={f.created_at.slice(0, 10)}
-                pushed={f.pushed_at.slice(0, 10)}
-            />)}
-        </div>
-        )
-    };
-
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
@@ -94,7 +77,17 @@ export default function GitHubProjects() {
                 <Button onClick={updatedFilter} style={{ margin: "10px 10px" }}>Sort by Date Updated</Button>
                 <Button onClick={pushedFilter} style={{ margin: "10px 10px" }}>Sort by Last Pushed</Button>
             </div>
-            {renderRepos()}
+            <div class="row justify-content-around">
+                {repos.map(f => <RepoProjectCard key={f.id}
+                    id={f.id}
+                    name={f.name}
+                    info={f.description}
+                    site={f.homepage}
+                    github={f.svn_url}
+                    created={f.created_at.slice(0, 10)}
+                    pushed={f.pushed_at.slice(0, 10)}
+                />)}
+            </div>
         </Container>
     )
 }
