@@ -38,7 +38,7 @@ export default function GitHubProjects() {
             return 0;
         }
         console.log(`Filter by pushed`);
-        setRepos(repos.sort(pushed))
+        setRepos([...repos.sort(pushed)])
     };
 
     const createdFilter = () => {
@@ -52,7 +52,7 @@ export default function GitHubProjects() {
             return 0;
         }
         console.log(`Filter by created`);
-        setRepos(repos.sort(created))
+        setRepos([...repos.sort(created)])
     };
 
     const updatedFilter = () => {
@@ -66,7 +66,7 @@ export default function GitHubProjects() {
             return 0;
         }
         console.log(`Filter by updated`);
-        setRepos(repos.sort(updated))
+        setRepos([...repos.sort(updated)])
     };
 
     console.log(repos);
