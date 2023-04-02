@@ -27,55 +27,27 @@ export default function GitHubProjects() {
 
     // removePortfolio()
 
-    const pushedFilter = () => {
-        const pushed = (a, b) => {
-            if (a.pushed_at > b.pushed_at) {
+    const sortRepos = (sortBy) => {
+        const sortFun = (a, b) => {
+            if (a[sortBy] > b[sortBy]) {
                 return -1;
             }
-            if (a.pushed_at < b.pushed_at) {
+            if (a[sortBy] < b[sortBy]) {
                 return 1;
             }
             return 0;
         }
         console.log(`Filter by pushed`);
-        setRepos([...repos.sort(pushed)])
-    };
-
-    const createdFilter = () => {
-        const created = (a, b) => {
-            if (a.created_at > b.created_at) {
-                return -1;
-            }
-            if (a.created_at < b.created_at) {
-                return 1;
-            }
-            return 0;
-        }
-        console.log(`Filter by created`);
-        setRepos([...repos.sort(created)])
-    };
-
-    const updatedFilter = () => {
-        const updated = (a, b) => {
-            if (a.updated_at > b.updated_at) {
-                return -1;
-            }
-            if (a.updated_at < b.updated_at) {
-                return 1;
-            }
-            return 0;
-        }
-        console.log(`Filter by updated`);
-        setRepos([...repos.sort(updated)])
+        setRepos([...repos.sort(sortFun)])
     };
 
     return (
         <Container>
             <h2 style={{ margin: "50px 0px" }}>Here are my other repositories from Github:</h2>
             <div className="sorting-buttons" style={{ marginBottom: 50 }}>
-                <Button onClick={createdFilter} style={{ margin: "10px 10px" }}>Sort by Date Created</Button>
-                <Button onClick={updatedFilter} style={{ margin: "10px 10px" }}>Sort by Date Updated</Button>
-                <Button onClick={pushedFilter} style={{ margin: "10px 10px" }}>Sort by Last Pushed</Button>
+                <Button onClick={() => sortRepos("created_at")} style={{ margin: "10px 10px" }}>Sort by Date Created</Button>
+                <Button onClick={() => sortRepos("updated_at")} style={{ margin: "10px 10px" }}>Sort by Date Updated</Button>
+                <Button onClick={() => sortRepos("pushed_at")} style={{ margin: "10px 10px" }}>Sort by Last Pushed</Button>
             </div>
             <div class="row justify-content-around">
                 {repos.map(f => <RepoProjectCard key={f.id}
