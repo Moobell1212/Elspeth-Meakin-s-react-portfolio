@@ -8,6 +8,12 @@
     font-weight: bold !important;
 }
 
+.me-auto {
+    margin:auto !important;
+    justify-content: center;
+}
+
+
 .link {
     display: inline-block;
     position: relative;
