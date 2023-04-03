@@ -58,7 +58,7 @@ export default function GitHubProjects() {
                     github={f.svn_url}
                     created={f.created_at.slice(0, 10)}
                     pushed={f.pushed_at.slice(0, 10)}
-                    
+                    updated={f.created_at.slice(0,10)}
                 />)}
             </div>
         </Container>

@@ -29,7 +29,14 @@ export default function RepoProjectCard(props) {
                                 {props.pushed}
                             </Card.Text>
                         </div>
-                        
+                        <div>
+                            <Card.Text className="date">
+                                Last pushed:
+                            </Card.Text>
+                            <Card.Text className="date">
+                                {props.pushed}
+                            </Card.Text>
+                        </div>
                     </div>
                     {!props.site ? (
                         <div className="highlighted-buttons">
