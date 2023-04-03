@@ -10,3 +10,17 @@
     overflow: hidden;
     background: #6CADDC;
 }
+
+.card-body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.project-info {
+    padding-top: 10px;
+}
+
+.highlighted-buttons {
+    margin: 20px 0px 5px 0px;
+}

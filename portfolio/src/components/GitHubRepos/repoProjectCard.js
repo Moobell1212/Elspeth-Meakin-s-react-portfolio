@@ -8,20 +8,35 @@ export default function RepoProjectCard(props) {
         <Card className="repocard border-dark text-center">
             <Card.Body>
                 <Card.Title className="repo-card-title">{props.name}</Card.Title>
-                <Card.Text>
+                <Card.Text className="project-info">
                     {props.info}
                 </Card.Text>
-                <div id="card-bottom-half">
-                    <Card.Text className="repo-date">
-                        Created on: {props.created}
-                    </Card.Text>
-                    <Card.Text>
-                        Last pushed: {props.pushed}
-                    </Card.Text>
-                    {!props.site ? (
-                        <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
-                    ) : (
+                <div>
+                    <div className="repo-dates">
                         <div>
+                            <Card.Text className="date">
+                                Created on:
+                            </Card.Text>
+                            <Card.Text className="date">
+                                {props.created}
+                            </Card.Text>
+                        </div>
+                        <div>
+                            <Card.Text className="date">
+                                Last pushed:
+                            </Card.Text>
+                            <Card.Text className="date">
+                                {props.pushed}
+                            </Card.Text>
+                        </div>
+                        
+                    </div>
+                    {!props.site ? (
+                        <div className="highlighted-buttons">
+                            <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
+                        </div>
+                    ) : (
+                        <div className="highlighted-buttons">
                             <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
                             <Button variant="primary" href={props.site} rel="noreferrer" target="_blank">Website</Button>
                         </div>

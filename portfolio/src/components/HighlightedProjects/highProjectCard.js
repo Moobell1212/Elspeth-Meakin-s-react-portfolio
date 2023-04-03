@@ -13,14 +13,18 @@ export default function HighlightedProjectCard(props) {
             )
             }
             <Card.Body>
+                <div>
                 <Card.Title>{props.name}</Card.Title>
-                <Card.Text>
+                <Card.Text className="project-info">
                     {props.info}
                 </Card.Text>
+                </div>
                 {!props.site ? (
-                    <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
+                    <div className="highlighted-buttons">
+                        <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
+                    </div>
                 ) : (
-                    <div>
+                    <div className="highlighted-buttons">
                         <Button variant="primary" href={props.github} rel="noreferrer" target="_blank">Github</Button>
                         <Button variant="primary" href={props.site} rel="noreferrer" target="_blank">Website</Button>
                     </div>
