@@ -17,16 +17,17 @@
 This is portfolio built using React, built maingly using API calls from GitHub. It contains a homepage, a projects page, and a contacts page. The navigation bar and footer is rendered to each page.
 
 The homepage contains:
-- A welcome message
+- A welcome message.
 - Information about me and what technologies I know and use.
 - A carousel showing the pinned repositories from my GitHub profile.
 
 The projects page contains:
-
+- A highlighted selection of my past projects .
+- All the repositories on my GitHub with sorting options.
 
 The contacts page contains:
-- Links to my GitHub and LinkedIn
-- A linked photo to a PDF version of my CV
+- Links to my GitHub and LinkedIn.
+- A linked photo to a PDF version of my CV.
 
 </br>
 
@@ -42,7 +43,7 @@ Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
 - [Acknowledgments](#questions)
 
 ## Usage
-- The header and footer renders to every page. The header contains animated  links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account, and links to contact me via the contact page and email.
+- The header and footer renders to every page. The header contains animated links to the other pages on the portfolio, and icon links to my GitHub and LinkedIn. The footer contains links to my GitHub profile and LinkedIn account, and links to contact me via the contact page and email.
 
 - The homepage contains:
     - A banner containing:
@@ -71,11 +72,14 @@ Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
     - Bootstrap cards containing all the repositories on my GitHub using the GitHub API call containing:
         - The project title 
         - The GitHub repository description of the project
-        - Dates that the repository was last updated, last pushed, and when it was created.
+        - Dates that the repository was last updated, last pushed, and created.
         - A link to the deployed website (when applicable)
         - A link to the GitHub repository
 
     - Animated filter buttons for the GitHub repositories for the date they are created, the date they were last updated, and the date they were last pushed.
+
+</br>
+<img src="./Images/projects.png">
 
 </br>
 
