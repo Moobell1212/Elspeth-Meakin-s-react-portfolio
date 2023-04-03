@@ -16,28 +16,13 @@
 ## Description
 This is portfolio built using React, built maingly using API calls from GitHub. It contains a homepage, a projects page, and a contacts page. The navigation bar and footer is rendered to each page.
 
-***This webpage is currently being built.***
-
 The homepage contains:
-- A banner containing:
-    - A letter by letter rendered message
-    - The profile photo from my GitHub profile (from an API call)
-- More information about me
-- A carousel with the stared repos from GitHub (from an API call)
+- A welcome message
+- Information about me and what technologies I know and use.
+- A carousel showing the pinned repositories from my GitHub profile.
 
 The projects page contains:
-- A highlighted selection of my past projects on boostrap cards containing:
-    - The project title 
-    - Information on the project
-    - A link to the deployed website (when applicable)
-    - A link to the GitHub repository
-    - A gif or screenshot of the application
-- Bootstrap cards containing all the repositories on my GitHub using the GitHub API call containing:
-    - The project title 
-    - A short description of the project
-    - A link to the deployed website (when applicable)
-    - A link to the GitHub repository
-    - Dates that the repository was last updated, and when it was created.
+
 
 The contacts page contains:
 - Links to my GitHub and LinkedIn
@@ -45,9 +30,7 @@ The contacts page contains:
 
 </br>
 
-***This webpage is currently being built.***
-
-Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
+Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
 
 ## Table of contents
 - [Usage](#usage)
@@ -62,8 +45,12 @@ Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-re
 - The header and footer renders to every page. The header contains animated  links to the other pages on the portfolio. The footer contains links to my GitHub profile and LinkedIn account, and links to contact me via the contact page and email.
 
 - The homepage contains:
-    - A banner with a typed message, my name, a welcome message, and the profile picture used on GitHub (generated from a GitHub API).
-    - Information about me.
+    - A banner containing:
+        - A letter by letter rendered message
+        - My name
+        - A welcome message
+        - The profile photo from my GitHub profile (from a GitHub API call)
+    - More information about me
     - The list of technologies I know and use.
     - A carousel containing the pinned repositories from my GitHub profile (generated from a GitHub API).
 
@@ -74,8 +61,22 @@ Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-re
 
 - The project page contains:
 
-    - Bootstrap cards with a selecton of past projects created using a json file. These will have buttons with hover animations for the projects GitHub page and deloyed website (if applicable). 
-    - Cards showing all the other repositories from my GitHub created using a GitHub API call. These repositories can be filtered by the date they are created and the date they were last updated via animated sort buttons.
+    - A highlighted selection of my past projects (from a JSON file) formed of boostrap cards containing:
+        - The project title 
+        - A gif or screenshot of the application
+        - Information on the project
+        - A animated button link to the deployed website (when applicable)
+        - A animated button link to the GitHub repository
+
+    - Bootstrap cards containing all the repositories on my GitHub using the GitHub API call containing:
+        - The project title 
+        - The GitHub repository description of the project
+        - Dates that the repository was last updated, last pushed, and when it was created.
+        - A link to the deployed website (when applicable)
+        - A link to the GitHub repository
+
+    - Animated filter buttons for the GitHub repositories for the date they are created, the date they were last updated, and the date they were last pushed.
+
 </br>
 
 - The contact page contains:
@@ -87,9 +88,7 @@ Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-re
 
 </br>
 
-***This webpage is currently being built.***
-
-Most up to date deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
+Deployed site: https://moobell1212.github.io/Elspeth-Meakin-s-react-portfolio/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
