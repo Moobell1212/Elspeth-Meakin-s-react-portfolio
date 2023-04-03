@@ -116,7 +116,7 @@ None
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contributing
-If there are any suggestions for improoving this README generator:
+If you have any suggestions for improoving this portfolio website generator:
 <ol>
 <li>Fork the project</li>
 <li>Create your branch</li>
@@ -124,6 +124,8 @@ If there are any suggestions for improoving this README generator:
 <li>Push your code to the branch</li>
 <li>Create a pull request in the repository</li>
 </ol>
+
+Any contributions you make are greatly appreciated.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
