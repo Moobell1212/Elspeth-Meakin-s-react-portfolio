@@ -116,7 +116,7 @@ None
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contributing
-If you have any suggestions for improoving this portfolio website generator:
+If you have any suggestions for improoving this project:
 <ol>
 <li>Fork the project</li>
 <li>Create your branch</li>
