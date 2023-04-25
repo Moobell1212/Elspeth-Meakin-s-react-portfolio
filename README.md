@@ -14,7 +14,7 @@
 </br>
 
 ## Description
-This is portfolio built using React, built maingly using API calls from GitHub. It contains a homepage, a projects page, and a contacts page. The navigation bar and footer is rendered to each page.
+This is portfolio built to showcase my skills, past projects, and GitHub repositories. The GitHub repository information is gathered using the GitHub API, with highlighted projects collated ona JSON file. This website contains a homepage, a projects page, and a contacts page. The navigation bar and footer containing internal and external links is rendered to each page.
 
 The homepage contains:
 - A welcome message.
